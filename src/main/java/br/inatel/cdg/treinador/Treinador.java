@@ -7,9 +7,7 @@ public class Treinador  {
 	private String arena;
 	private int qtdPokemon;
 	private Pokemon pokemons [];
-	public Treinador treinadores [] = new Treinador [10] ;
 	
-	int i = 1;
 	
 	public Treinador(String nome, String cidade, int qtdPokemon) {
 		
@@ -36,11 +34,7 @@ public class Treinador  {
 		}
 	}
 	
-	
-	
-	
-	
-	
+
 	
 	public void mostraInfoPokemons (Treinador treinador_x) {
 		//System.out.println("Pokemon: " + treinador_x.getNome());
@@ -53,6 +47,7 @@ public class Treinador  {
 	}
 	
 	
+	
 	public void mostraPokemons (Treinador treinador_x) {
 		//Pokemons
 		System.out.println("Pokemons do treinador: " + treinador_x.getNome());
@@ -62,21 +57,6 @@ public class Treinador  {
 		System.out.println("Nome: " + pokes.getNome() + " ID Pokedex: " + pokes.getId_pokedex());			
 			}
 	}
-	
-	
-	
-
-	
-	// função para verificar se o nome digitado é corresponde a de um treinador existente
-	public boolean temTreinador(String name) {
-		
-		for (int i=0; i < 10; i++)
-			if (treinadores[i].getNome().equalsIgnoreCase(nome)){
-				return true;
-			}
-		return false;
-	}
-	
 		
 		
 
@@ -93,8 +73,6 @@ public class Treinador  {
 	public int getQtdPokemon() {
 		return qtdPokemon;
 	}
-	public Treinador[] getTreinadores() {
-		return treinadores;
-	}
+
 	
 }

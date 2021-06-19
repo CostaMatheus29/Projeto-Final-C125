@@ -40,7 +40,8 @@ package br.inatel.cdg;
 import br.inatel.cdg.pokemon.Pokemon;
 import br.inatel.cdg.pokemon.PokemonAgua;
 import br.inatel.cdg.pokemon.PokemonEletrico;
-import br.inatel.cdg.pokemon.PokemonFogo;
+import br.inatel.cdg.pokemon.PokemonGrama;
+import br.inatel.cdg.pokemon.PokemonPedra;
 import br.inatel.cdg.treinador.Treinador;
 
 public class Main {
@@ -50,26 +51,40 @@ public class Main {
 	public static void main(String[] args) {
 		
 				
-		Treinador treinador1 = new Treinador("Ash","Pallet", 2);	
-		Treinador treinador2 = new Treinador("Misty","Pallet", 2);
-		Treinador treinador3 = new Treinador("Clemont","Lumiose", 2);
-		Treinador treinador4 = new Treinador("James","Rocket", 2);
+		// NOME, CIDADE - GINASIO, QUANTIDADE DE POKEMON
+		Treinador treinador1 = new Treinador("Brock","Ginasio de Pewter", 2);	
+		Treinador treinador2 = new Treinador("Misty","Ginasio de Cerulean", 2);
+		Treinador treinador3 = new Treinador("Tenente Surge","Ginasio de Vermilion", 2);
+		Treinador treinador4 = new Treinador("Erika","Ginasio de Celadon", 2);
+		
+		
+/**********************************************************************************************************************************************
+		Brock lider do Ginasio de Pewter (Ginasio da Pedra) - Insignia da Rocha
+		Misty lider do Ginasio de Cerulean (Ginasio da Agua) - Insignia da Agua
+		Tenente Surge do Ginasio de Vermilion (Ginasio Eletrico) - Insignia do Trovao
+		Erika do Ginasio de Celadon (Ginasio de Planta) - Insignia do Arco Iris
+		
+		link do site com o decoorer da historia de Ash pelos ginasios em busca de suas insignias
+		https://blogcelebi.webnode.com.br/o-anime/ginasios-torneios/lideres-de-ginasio/
+
+***********************************************************************************************************************************************/
+		
 
 		
-		treinador1.addPokemon(new PokemonEletrico("Pikachu", 6, 1));
-		treinador1.addPokemon(new PokemonFogo("Charizard", 8, 2));
+		treinador1.addPokemon(new PokemonPedra("Geodude", 6, 1));
+		treinador1.addPokemon(new PokemonPedra("Onix", 8, 2));
 		//treinador1.mostraPokemons(treinador1);
 		
 		treinador2.addPokemon(new PokemonAgua("Staryu", 5, 3));
-		treinador2.addPokemon(new PokemonAgua("Psyduck", 4, 4));
+		treinador2.addPokemon(new PokemonAgua("Goldeen", 4, 4));
 		//treinador2.mostraPokemons(treinador2);
 		
-		treinador3.addPokemon(new PokemonEletrico("Magneton", 7, 5));
-		treinador3.addPokemon(new PokemonEletrico("Magnemite", 5, 6));
+		treinador3.addPokemon(new PokemonEletrico("Raichu", 7, 5));
+		treinador3.addPokemon(new PokemonEletrico("Pikachu", 5, 6));
 		//treinador3.mostraPokemons(treinador3);
 		
-		treinador4.addPokemon(new PokemonAgua("Gyarados", 6, 7));
-		treinador4.addPokemon(new PokemonFogo("Victreebel", 7, 8));
+		treinador4.addPokemon(new PokemonGrama("Tangela", 6, 7));
+		treinador4.addPokemon(new PokemonGrama("Weepinbell", 7, 8));
 		//treinador4.mostraPokemons(treinador4);
 		
 		

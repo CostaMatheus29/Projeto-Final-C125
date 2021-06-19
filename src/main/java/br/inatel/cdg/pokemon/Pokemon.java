@@ -28,6 +28,15 @@ public abstract class Pokemon implements Habilidades, Atributos {
 	public void calculaAtaque() {
 		this.ataque = this.nivel * 5;
 	}
+	
+
+	public void calculaDefesa() {
+		this.defesa = this.nivel * 4;
+	}
+	
+	public void calculaVida() {
+		this.vida = this.nivel * 10;
+	}
 
 	
 	
