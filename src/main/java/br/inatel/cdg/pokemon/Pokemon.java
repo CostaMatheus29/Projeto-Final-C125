@@ -22,12 +22,22 @@ public abstract class Pokemon implements Habilidades {
 	public Pokemon(String nome, int nivel, int id_pokedex) {
 		this.nome = nome;
 		this.nivel = nivel;
-		this.id_pokedex = id_pokedex;		
+		this.id_pokedex = id_pokedex;
+
+
 		
 		//vida, ataque, defesa serão definidos de acordo com o nivel e tipo do Pokemon
 			
 	}
 		
+	
+	
+
+	
+	
+	
+	
+	
 	
 	
 	
