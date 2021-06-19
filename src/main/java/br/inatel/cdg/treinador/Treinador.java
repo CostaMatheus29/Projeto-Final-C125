@@ -54,7 +54,7 @@ public class Treinador  {
 			for (Pokemon pokes : treinador_x.pokemons) {
 				if (pokes == null)
 					break;
-		System.out.println("Nome: " + pokes.getNome() + " ID Pokedex: " + pokes.getId_pokedex());			
+		System.out.println("Nome: " + pokes.getNome() + " - ID Pokedex: " + pokes.getId_pokedex());			
 			}
 	}
 		
