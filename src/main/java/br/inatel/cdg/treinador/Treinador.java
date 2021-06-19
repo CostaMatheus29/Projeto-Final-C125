@@ -42,6 +42,17 @@ public class Treinador  {
 	
 	
 	
+	public void mostraInfoPokemons (Treinador treinador_x) {
+		//System.out.println("Pokemon: " + treinador_x.getNome());
+			for (Pokemon pokes : treinador_x.pokemons) {
+				if (pokes == null)
+					break;
+				System.out.println("Pokemon: " + pokes.getNome());		
+				System.out.println("Vida: " + pokes.getVida() + " Ataque: " + pokes.getAtaque() + " Defesa: " + pokes.getDefesa());			
+			}
+	}
+	
+	
 	public void mostraPokemons (Treinador treinador_x) {
 		//Pokemons
 		System.out.println("Pokemons do treinador: " + treinador_x.getNome());

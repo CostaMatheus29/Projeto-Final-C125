@@ -1,4 +1,4 @@
-package br.inatel.cdg.habilidades;
+package br.inatel.cdg.interfaces;
 
 public interface Habilidades {
 	
@@ -9,6 +9,9 @@ public interface Habilidades {
 	
 	public void restauraVida ();
 
+	
+		
+	
 	
 	
 }

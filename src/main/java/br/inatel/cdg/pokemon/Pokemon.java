@@ -1,9 +1,9 @@
 package br.inatel.cdg.pokemon;
 
-import br.inatel.cdg.habilidades.Habilidades;
-import br.inatel.cdg.treinador.Treinador;
+import br.inatel.cdg.interfaces.Atributos;
+import br.inatel.cdg.interfaces.Habilidades;
 
-public abstract class Pokemon implements Habilidades {
+public abstract class Pokemon implements Habilidades, Atributos {
 	
 	protected String nome;
 	protected int nivel;
@@ -13,26 +13,23 @@ public abstract class Pokemon implements Habilidades {
 	protected int defesa;
 	
 	
-//	//protected Type type;
-//	public enum Type
-//	{
-//		FIRE, WATER, GRASS, ELECTRIC
-//	}
 
 	public Pokemon(String nome, int nivel, int id_pokedex) {
 		this.nome = nome;
 		this.nivel = nivel;
 		this.id_pokedex = id_pokedex;
 
-
 		
 		//vida, ataque, defesa serão definidos de acordo com o nivel e tipo do Pokemon
 			
 	}
 		
-	
-	
 
+	public void calculaAtaque() {
+		this.ataque = this.nivel * 5;
+	}
+
+	
 	
 	
 	

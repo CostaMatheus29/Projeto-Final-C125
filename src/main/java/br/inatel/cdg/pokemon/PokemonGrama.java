@@ -1,41 +1,25 @@
 package br.inatel.cdg.pokemon;
 
-import java.util.Random;
+public class PokemonGrama extends Pokemon {
 
-public class PokemonFogo extends Pokemon {
-
-	public PokemonFogo(String nome, int nivel, int id_pokedex) {
-		super(nome, nivel, id_pokedex );
-		
-		calculaAtaque();
-		calculaDefesa();
-		calculaVida();
-		
-		
+	public PokemonGrama(String nome, int nivel, int id_pokedex) {
+		super(nome, nivel, id_pokedex);
 	}
-	
-	
-	
-	
+
 	@Override
 	public void atacar() {
-		
-		
+
 	}
 
 	@Override
 	public void tomarDano() {
-		
-		
+
 	}
 
 	@Override
 	public void restauraVida() {
-		
+
 	}
-
-
-
 
 	@Override
 	public void calculaDefesa() {
@@ -43,17 +27,11 @@ public class PokemonFogo extends Pokemon {
 		
 	}
 
-
-
-
 	@Override
 	public void calculaAtaque() {
-		super.calculaAtaque();
-		this.ataque += this.nivel * 2;
+		// TODO Auto-generated method stub
+		
 	}
-
-	
-
 
 	@Override
 	public void calculaVida() {
