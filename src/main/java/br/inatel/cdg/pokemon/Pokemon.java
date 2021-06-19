@@ -13,29 +13,28 @@ public abstract class Pokemon implements Habilidades, Atributos {
 	protected int defesa;
 	
 	
-
+	// CONSTRUTOR DA SUPERCLASSE
 	public Pokemon(String nome, int nivel, int id_pokedex) {
 		this.nome = nome;
 		this.nivel = nivel;
 		this.id_pokedex = id_pokedex;
 
+	// ATAQUE, VIDA, DEFESA definidos separadamente pra cada classe especifica de Pokemon
 		
-		//vida, ataque, defesa serão definidos de acordo com o nivel e tipo do Pokemon
-			
 	}
 		
 
 	public void calculaAtaque() {
-		this.ataque = this.nivel * 5;
+		this.ataque = this.nivel * 7;
 	}
 	
 
 	public void calculaDefesa() {
-		this.defesa = this.nivel * 4;
+		this.defesa = this.nivel * 6;
 	}
 	
 	public void calculaVida() {
-		this.vida = this.nivel * 10;
+		this.vida = this.nivel * 50;
 	}
 
 	

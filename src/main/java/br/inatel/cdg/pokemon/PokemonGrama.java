@@ -21,22 +21,25 @@ public class PokemonGrama extends Pokemon {
 
 	}
 
-	@Override
-	public void calculaDefesa() {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
+	
+	
 	@Override
 	public void calculaAtaque() {
-		// TODO Auto-generated method stub
-		
+		super.calculaAtaque();
+		this.ataque += this.nivel * 0;
 	}
 
 	@Override
+	public void calculaDefesa() {
+		super.calculaDefesa();
+		this.defesa += this.nivel * 10;
+	}
+	
+	@Override
 	public void calculaVida() {
-		// TODO Auto-generated method stub
-		
+		super.calculaVida();
+		this.vida += this.nivel * 7;
 	}
 
 }

@@ -34,26 +34,22 @@ public class PokemonPedra extends Pokemon {
 
 
 
-
-
-
-
 	@Override
 	public void calculaAtaque() {
 		super.calculaAtaque();
-		this.ataque += this.nivel * 2;
+		this.ataque += this.nivel * 0;
 	}
 
 	@Override
 	public void calculaDefesa() {
-		// TODO Auto-generated method stub
 		super.calculaDefesa();
+		this.defesa += this.nivel * 10;
 	}
 	
 	@Override
 	public void calculaVida() {
-		// TODO Auto-generated method stub
 		super.calculaVida();
+		this.vida += this.nivel * 7;
 	}
 
 }
