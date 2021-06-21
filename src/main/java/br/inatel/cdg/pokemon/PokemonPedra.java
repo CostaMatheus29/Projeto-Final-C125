@@ -33,7 +33,6 @@ public class PokemonPedra extends Pokemon {
 	}
 
 
-
 	@Override
 	public void calculaAtaque() {
 		this.ataque += this.nivel * 10;
@@ -46,7 +45,7 @@ public class PokemonPedra extends Pokemon {
 	
 	@Override
 	public void calculaVida() {
-		//this.vida += this.nivel * 10;
+		this.vida += this.nivel * 10;
 	}
 
 }

@@ -4,7 +4,10 @@ public class PokemonAgua extends Pokemon {
 
 	public PokemonAgua(String nome, int nivel, int id_pokedex) {
 		super(nome, nivel, id_pokedex);
-		// TODO Auto-generated constructor stub
+		
+		calculaAtaque();
+		calculaDefesa();
+		calculaVida();
 	}
 
 	@Override

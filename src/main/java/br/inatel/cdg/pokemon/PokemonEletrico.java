@@ -4,6 +4,10 @@ public class PokemonEletrico extends Pokemon {
 
 	public PokemonEletrico(String nome, int nivel, int id_pokedex) {
 		super(nome, nivel, id_pokedex);
+		
+		calculaAtaque();
+		calculaDefesa();
+		calculaVida();
 	}
 
 	@Override

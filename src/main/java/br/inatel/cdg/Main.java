@@ -108,7 +108,12 @@ public class Main {
 		//System.out.println();
 		
 		treinador1.mostraInfoPokemons(treinador1);
-	
+		System.out.println();
+		treinador2.mostraInfoPokemons(treinador2);
+		System.out.println();
+		treinador3.mostraInfoPokemons(treinador3);
+		System.out.println();
+		treinador4.mostraInfoPokemons(treinador4);
 		
 		}
 	
