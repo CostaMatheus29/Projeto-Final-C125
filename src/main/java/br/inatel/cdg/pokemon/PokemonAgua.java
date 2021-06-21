@@ -12,8 +12,19 @@ public class PokemonAgua extends Pokemon {
 
 	
 	@Override
-	public void atacar(Pokemon ataca, Pokemon defende) {
+	public void atacar(Pokemon defende) {
 		
+		if(defende.getVida() > 0) {
+			if(this.ataque > defende.defesa) {
+			defende.setVida(Math.abs((defende.vida + defende.defesa) - this.ataque));
+			System.out.println(defende.nome + " tomou " 
+			+ Math.abs((defende.vida + defende.defesa) - this.ataque) + " de dano");
+			}else {
+				System.out.println("Ataque sem efeito!");
+			}
+		}else if (defende.getVida() <= 0) {
+			System.out.println("O Pokemon " + defende.nome + " está morto!");
+		}
 	}
 
 

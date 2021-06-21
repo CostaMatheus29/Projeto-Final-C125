@@ -14,17 +14,22 @@ public class PokemonPedra extends Pokemon {
 	
 	
 	@Override
-	public void atacar(Pokemon ataca, Pokemon defende) {
-		ataca.getAtaque();
+	public void atacar(Pokemon defende) {
 		defende.getVida();
 		defende.getDefesa();
 		
 		if(defende.getVida() > 0) {
-			defende.setVida(Math.abs((ataca.getAtaque() - (defende.getDefesa() + defende.vida))));
-			
-			
-			
+			if(this.ataque > defende.defesa) {
+			defende.setVida(Math.abs((defende.vida + defende.defesa) - this.ataque));
+			System.out.println(defende.nome + " tomou " 
+					+ (this.ataque - defende.defesa) + " de dano");
+			}else {
+				System.out.println("Ataque sem efeito!");
+			}
+		}else if (defende.getVida() <= 0) {
+			System.out.println("O Pokemon " + defende.nome + " está morto!");
 		}
+		
 	}
 	
 

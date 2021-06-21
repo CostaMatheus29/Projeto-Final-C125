@@ -80,16 +80,18 @@ public class Main {
 
 ***********************************************************************************************************************************************/
 		
-
 		
-		treinador1.addPokemon(new PokemonPedra("Geodude", 1, 74));
-		treinador1.addPokemon(new PokemonPedra("Onix", 1, 95));
+		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
+		PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
+		treinador1.addPokemon(Geodude);
+		treinador1.addPokemon(Onix);
 		//treinador1.mostraPokemons(treinador1);
 		
 		//System.out.println();
-		
-		treinador2.addPokemon(new PokemonAgua("Staryu", 1, 120));
-		treinador2.addPokemon(new PokemonAgua("Goldeen", 1, 118));
+		PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
+		PokemonAgua Goldeen = new PokemonAgua("Goldeen", 1, 118);
+		treinador2.addPokemon(Staryu);
+		treinador2.addPokemon(Goldeen);
 		//treinador2.mostraPokemons(treinador2);
 		
 		//System.out.println();
@@ -113,9 +115,8 @@ public class Main {
 		treinador3.mostraInfoPokemons(treinador3);
 		System.out.println();
 		treinador4.mostraInfoPokemons(treinador4);
-		
-		
-		
+		System.out.println();
+		Geodude.atacar(Goldeen);
 		
 		}
 	
