@@ -56,6 +56,8 @@ public class Main {
 		Treinador treinador3 = new Treinador("Tenente Surge","Ginasio de Vermilion", 2);
 		Treinador treinador4 = new Treinador("Erika","Ginasio de Celadon", 2);
 		
+		System.out.println("Testando");
+		
 		
 /**********************************************************************************************************************************************
 		Brock -			lider do Ginasio de Pewter (Ginasio da Pedra) - Insignia da Rocha
