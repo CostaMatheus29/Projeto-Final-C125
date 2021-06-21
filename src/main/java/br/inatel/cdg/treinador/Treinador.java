@@ -37,7 +37,6 @@ public class Treinador  {
 
 	
 	public void mostraInfoPokemons (Treinador treinador_x) {
-		//System.out.println("Pokemon: " + treinador_x.getNome());
 			for (Pokemon pokes : treinador_x.pokemons) {
 				if (pokes == null)
 					break;

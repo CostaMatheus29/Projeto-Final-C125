@@ -13,13 +13,21 @@ public class PokemonPedra extends Pokemon {
 	}
 	
 	
-	
-	
 	@Override
-	public void atacar() {
+	public void atacar(Pokemon ataca, Pokemon defende) {
+		ataca.getAtaque();
+		defende.getVida();
+		defende.getDefesa();
 		
-		
+		if(defende.getVida() > 0) {
+			defende.setVida(Math.abs((ataca.getAtaque() - (defende.getDefesa() + defende.vida))));
+			
+			
+			
+		}
 	}
+	
+
 
 	@Override
 	public void tomarDano() {
@@ -33,6 +41,7 @@ public class PokemonPedra extends Pokemon {
 	}
 
 
+	
 	@Override
 	public void calculaAtaque() {
 		this.ataque += this.nivel * 10;
@@ -45,7 +54,7 @@ public class PokemonPedra extends Pokemon {
 	
 	@Override
 	public void calculaVida() {
-		this.vida += this.nivel * 10;
+		this.vida += (this.nivel - 1) * 10;
 	}
 
 }

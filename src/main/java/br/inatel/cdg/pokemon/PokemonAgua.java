@@ -10,21 +10,20 @@ public class PokemonAgua extends Pokemon {
 		calculaVida();
 	}
 
+	
 	@Override
-	public void atacar() {
-		// TODO Auto-generated method stub
-
+	public void atacar(Pokemon ataca, Pokemon defende) {
+		
 	}
+
 
 	@Override
 	public void tomarDano() {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void restauraVida() {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -43,7 +42,7 @@ public class PokemonAgua extends Pokemon {
 	
 	@Override
 	public void calculaVida() {
-		this.vida += this.nivel * 10;
+		this.vida += (this.nivel - 1) * 10;
 	}
 
 }

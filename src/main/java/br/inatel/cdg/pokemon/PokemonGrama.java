@@ -10,9 +10,11 @@ public class PokemonGrama extends Pokemon {
 		calculaVida();
 	}
 
+	
+	
 	@Override
-	public void atacar() {
-
+	public void atacar(Pokemon ataca, Pokemon defende) {
+		
 	}
 
 	@Override
@@ -40,7 +42,7 @@ public class PokemonGrama extends Pokemon {
 	
 	@Override
 	public void calculaVida() {
-		this.vida += this.nivel * 10;
+		this.vida += (this.nivel - 1) * 10;
 	}
 
 }

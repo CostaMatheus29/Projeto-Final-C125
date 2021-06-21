@@ -34,8 +34,7 @@ escrita de arquivos.
 
 package br.inatel.cdg;
 
-//import java.util.Random;
-//import java.util.Scanner;
+
 
 import br.inatel.cdg.pokemon.PokemonAgua;
 import br.inatel.cdg.pokemon.PokemonEletrico;
@@ -114,6 +113,9 @@ public class Main {
 		treinador3.mostraInfoPokemons(treinador3);
 		System.out.println();
 		treinador4.mostraInfoPokemons(treinador4);
+		
+		
+		
 		
 		}
 	
