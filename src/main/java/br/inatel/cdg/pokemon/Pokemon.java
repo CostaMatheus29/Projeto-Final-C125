@@ -1,5 +1,7 @@
 package br.inatel.cdg.pokemon;
 
+import java.util.Random;
+
 import br.inatel.cdg.interfaces.Atributos;
 import br.inatel.cdg.interfaces.Habilidades;
 
@@ -18,33 +20,15 @@ public abstract class Pokemon implements Habilidades, Atributos {
 		this.nome = nome;
 		this.nivel = nivel;
 		this.id_pokedex = id_pokedex;
-
-	// ATAQUE, VIDA, DEFESA definidos separadamente pra cada classe especifica de Pokemon
+	
+		Random rand = new Random();
+		this.ataque = rand.nextInt(50) + 1;
+		this.defesa = rand.nextInt(50) + 1;
+		this.vida = 100;
 		
 	}
 		
 
-	public void calculaAtaque() {
-		this.ataque = this.nivel * 7;
-	}
-	
-
-	public void calculaDefesa() {
-		this.defesa = this.nivel * 6;
-	}
-	
-	public void calculaVida() {
-		this.vida = this.nivel * 50;
-	}
-
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -71,5 +55,6 @@ public abstract class Pokemon implements Habilidades, Atributos {
 		return vida;
 	}
 	
+
 	
 }

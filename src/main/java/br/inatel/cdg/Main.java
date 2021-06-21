@@ -56,7 +56,7 @@ public class Main {
 		Treinador treinador3 = new Treinador("Tenente Surge","Ginasio de Vermilion", 2);
 		Treinador treinador4 = new Treinador("Erika","Ginasio de Celadon", 2);
 		
-		System.out.println("Testando");
+
 		
 		
 /**********************************************************************************************************************************************
@@ -107,7 +107,7 @@ public class Main {
 		
 		//System.out.println();
 		
-		//treinador1.mostraInfoPokemons(treinador1);
+		treinador1.mostraInfoPokemons(treinador1);
 	
 		
 		}
