@@ -36,6 +36,7 @@ package br.inatel.cdg;
 
 
 
+import br.inatel.cdg.arena.Arena;
 import br.inatel.cdg.pokemon.PokemonAgua;
 import br.inatel.cdg.pokemon.PokemonEletrico;
 import br.inatel.cdg.pokemon.PokemonGrama;
@@ -83,6 +84,7 @@ public class Main {
 		
 		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
 		PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
+		
 		treinador1.addPokemon(Geodude);
 		treinador1.addPokemon(Onix);
 		//treinador1.mostraPokemons(treinador1);
@@ -94,7 +96,7 @@ public class Main {
 		treinador2.addPokemon(Goldeen);
 		//treinador2.mostraPokemons(treinador2);
 		
-		//System.out.println();
+		//System.out.println();	//PULA LINHA
 		
 		treinador3.addPokemon(new PokemonEletrico("Raichu", 2, 26));
 		treinador3.addPokemon(new PokemonEletrico("Pikachu", 1, 25));
@@ -108,15 +110,23 @@ public class Main {
 		
 		//System.out.println();
 		
-		treinador1.mostraInfoPokemons(treinador1);
-		System.out.println();
-		treinador2.mostraInfoPokemons(treinador2);
-		System.out.println();
-		treinador3.mostraInfoPokemons(treinador3);
-		System.out.println();
-		treinador4.mostraInfoPokemons(treinador4);
-		System.out.println();
+//		treinador1.mostraInfoPokemons(treinador1);
+//		System.out.println();
+//		treinador2.mostraInfoPokemons(treinador2);
+//		System.out.println();
+//		treinador3.mostraInfoPokemons(treinador3);
+//		System.out.println();
+//		treinador4.mostraInfoPokemons(treinador4);
+//		System.out.println();
+		
 		Geodude.atacar(Goldeen);
+		
+	   
+		//Implementei na classe Arena a função screen pra printar a mensagem Pokemon grandão
+		Arena arena = new Arena();
+		arena.screen();
+		
+		
 		
 		}
 	

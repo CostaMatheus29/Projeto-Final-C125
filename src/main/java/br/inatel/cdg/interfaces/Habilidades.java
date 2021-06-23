@@ -7,7 +7,7 @@ public interface Habilidades {
 	
 	public void atacar (Pokemon defende);
 	
-	public void tomarDano ();
+	public void tomarDano (Pokemon defende);
 	
 	public void restauraVida ();
 

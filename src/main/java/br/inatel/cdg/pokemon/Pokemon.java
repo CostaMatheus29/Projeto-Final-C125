@@ -27,7 +27,36 @@ public abstract class Pokemon implements Habilidades, Atributos {
 		this.vida = 100;
 		
 	}
+	
+	
+	
+	//TESTANDO
+	
+	@Override
+	public void atacar(Pokemon defende) {
+		defende.getVida();
+		defende.getDefesa();
 		
+		if(defende.getVida() > 0) {
+			if(this.ataque > defende.defesa) {
+			defende.setVida(Math.abs((defende.vida + defende.defesa) - this.ataque));
+			System.out.println(defende.nome + " tomou " 
+					+ (this.ataque - defende.defesa) + " de dano");
+			}else {
+				System.out.println("Ataque sem efeito!");
+			}
+		}else if (defende.getVida() <= 0) {
+			System.out.println("O Pokemon " + defende.nome + " está morto!");
+		}
+		
+	}
+	
+	
+	@Override
+	public void tomarDano(Pokemon defende) {
+		//defende.vida -= 
+		
+	}	
 
 	
 	

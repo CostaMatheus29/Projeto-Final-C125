@@ -27,10 +27,7 @@ public class PokemonEletrico extends Pokemon {
 		
 	}
 
-	@Override
-	public void tomarDano() {
 
-	}
 
 	@Override
 	public void restauraVida() {
@@ -54,6 +51,14 @@ public class PokemonEletrico extends Pokemon {
 	@Override
 	public void calculaVida() {
 		this.vida += (this.nivel - 1) * 10;
+	}
+
+
+
+	@Override
+	public void tomarDano(Pokemon defende) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

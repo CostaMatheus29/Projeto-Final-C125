@@ -32,13 +32,14 @@ public class PokemonPedra extends Pokemon {
 		
 	}
 	
-
-
+	
 	@Override
-	public void tomarDano() {
-		
+	public void tomarDano(Pokemon defende) {
 		
 	}
+
+
+
 
 	@Override
 	public void restauraVida() {
@@ -61,5 +62,9 @@ public class PokemonPedra extends Pokemon {
 	public void calculaVida() {
 		this.vida += (this.nivel - 1) * 10;
 	}
+
+
+
+
 
 }
