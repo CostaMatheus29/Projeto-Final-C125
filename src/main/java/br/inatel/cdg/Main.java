@@ -50,14 +50,18 @@ public class Main {
 	public static void main(String[] args) {
 		
 				
+		//Array de treinadores de tamanho 4 
+		Treinador t [] = new Treinador [4];
+		
+		
 		// NOME, CIDADE - GINASIO, QUANTIDADE DE POKEMON
-		Treinador treinador1 = new Treinador("Brock","Ginasio de Pewter", 2);	
-		Treinador treinador2 = new Treinador("Misty","Ginasio de Cerulean", 2);
-		Treinador treinador3 = new Treinador("Tenente Surge","Ginasio de Vermilion", 2);
-		Treinador treinador4 = new Treinador("Erika","Ginasio de Celadon", 2);
+		t [0] = new Treinador("Brock","Ginasio de Pewter", 2);	
+		t [1] = new Treinador("Misty","Ginasio de Cerulean", 2);
+		t [2] = new Treinador("Tenente Surge","Ginasio de Vermilion", 2);
+		t [3] = new Treinador("Erika","Ginasio de Celadon", 2);
 		
-
 		
+			
 		
 /**********************************************************************************************************************************************
 		Brock -			lider do Ginasio de Pewter (Ginasio da Pedra) - Insignia da Rocha
@@ -85,46 +89,45 @@ public class Main {
 		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
 		PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
 		
-		treinador1.addPokemon(Geodude);
-		treinador1.addPokemon(Onix);
-		//treinador1.mostraPokemons(treinador1);
+		t[0].addPokemon(Geodude);
+		t[0].addPokemon(Onix);
+		//t[0].mostraPokemons(treinador1);
 		
 		//System.out.println();
 		PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
 		PokemonAgua Goldeen = new PokemonAgua("Goldeen", 1, 118);
-		treinador2.addPokemon(Staryu);
-		treinador2.addPokemon(Goldeen);
-		//treinador2.mostraPokemons(treinador2);
+		t[1].addPokemon(Staryu);
+		t[1].addPokemon(Goldeen);
+		//t[1].mostraPokemons(treinador2);
 		
 		//System.out.println();	//PULA LINHA
 		
-		treinador3.addPokemon(new PokemonEletrico("Raichu", 2, 26));
-		treinador3.addPokemon(new PokemonEletrico("Pikachu", 1, 25));
-		//treinador3.mostraPokemons(treinador3);
+		t[2].addPokemon(new PokemonEletrico("Raichu", 2, 26));
+		t[2].addPokemon(new PokemonEletrico("Pikachu", 1, 25));
+		//t[2].mostraPokemons(treinador3);
 		
 		//System.out.println();
 		
-		treinador4.addPokemon(new PokemonGrama("Tangela", 1, 114));
-		treinador4.addPokemon(new PokemonGrama("Weepinbell", 2, 70));
-		//treinador4.mostraPokemons(treinador4);
+		t[3].addPokemon(new PokemonGrama("Tangela", 1, 114));
+		t[3].addPokemon(new PokemonGrama("Weepinbell", 2, 70));
+		//t[3].mostraPokemons(treinador4);
 		
 		//System.out.println();
 		
-//		treinador1.mostraInfoPokemons(treinador1);
-//		System.out.println();
-//		treinador2.mostraInfoPokemons(treinador2);
-//		System.out.println();
-//		treinador3.mostraInfoPokemons(treinador3);
-//		System.out.println();
-//		treinador4.mostraInfoPokemons(treinador4);
-//		System.out.println();
+		t[0].mostraInfoPokemons(t[0]);
+		System.out.println();
+		t[1].mostraInfoPokemons(t[1]);
+		System.out.println();
+		t[2].mostraInfoPokemons(t[2]);
+		System.out.println();
+		t[3].mostraInfoPokemons(t[3]);
+		System.out.println();
 		
 		Geodude.atacar(Goldeen);
 		
 	   
 		//Implementei na classe Arena a função screen pra printar a mensagem Pokemon grandão
-		Arena arena = new Arena();
-		arena.screen();
+		Arena.screen();
 		
 		
 		
