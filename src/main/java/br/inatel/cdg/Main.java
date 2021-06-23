@@ -60,7 +60,7 @@ public class Main {
 		t [2] = new Treinador("Tenente Surge","Ginasio de Vermilion", 2);
 		t [3] = new Treinador("Erika","Ginasio de Celadon", 2);
 		
-		
+		//posteriormente trocar esse Array por List
 			
 		
 /**********************************************************************************************************************************************
