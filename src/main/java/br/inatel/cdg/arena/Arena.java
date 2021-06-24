@@ -28,6 +28,8 @@ public class Arena {
 		System.out.println();
 	}
 
+	
+	//INICIA A BATALHA, MOSTRANDO OS DETALHES DA LUTA E DEPOIS CHAMA A FUNÇÃO LUTAR
 	public void iniciarBatalha(Treinador t1, Pokemon atacando, Treinador t2, Pokemon defendendo) {
 
 		Random rand = new Random();
@@ -48,6 +50,7 @@ public class Arena {
 
 	}
 
+	//REALIZA O COMBATE ENTRE OS POKEMONS 
 	private void lutar(Pokemon atacando, Pokemon defendendo) {
 
 		while (atacando.getVida() > 0 && defendendo.getVida() > 0) {
@@ -103,7 +106,7 @@ public class Arena {
 				System.out.println("O Pokemon " + atacando.getNome() + " evoluiu");
 				atacando.setNome("Graveler"); 	//atacando.evoluir
 				System.out.println("Pokemon: " + atacando.getNome() + " apos evolucao");
-			} else {
+			} else if (atacando.getVida() <= 0) {
 				System.out.println("O Pokemon " + atacando.getNome() + " perdeu a batalha!");
 				System.out.println("O Pokemon " + defendendo.getNome() + " evoluiu");
 				defendendo.setNome("Seaking");	//defendendo.evoluir

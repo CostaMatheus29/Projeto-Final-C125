@@ -20,7 +20,7 @@ public abstract class Pokemon implements Habilidades, Atributos {
 		this.nivel = nivel;
 		this.id_pokedex = id_pokedex;
 
-		//Ataque, defesa são gerados aleatoriamente de 0 a 50
+		//ATAQUE - DEFESA SÃO GERADOS DE FORMA ALEATORIA (1 - 50)
 		Random rand = new Random();
 		this.ataque = rand.nextInt(50) + 1;
 		this.defesa = rand.nextInt(50) + 1;
@@ -31,7 +31,7 @@ public abstract class Pokemon implements Habilidades, Atributos {
 
 
 	
-
+	//FUNÇÃO RESPONSAVEL POR CAUSAR DANO A UM POKEMON QUANDO O MESMO FOR ATACADO
 	@Override
 	public void tomarDano(Pokemon poke, int dano) {
 		poke.vida -= dano;

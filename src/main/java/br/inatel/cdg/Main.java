@@ -89,9 +89,9 @@ public class Main {
 		
 		
 		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
-		//PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
+		PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
 		t[0].addPokemon(Geodude);
-		//t[0].addPokemon(Onix);
+		t[0].addPokemon(Onix);
 		
 		//PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
 		PokemonAgua Goldeen = new PokemonAgua("Goldeen", 1, 118);
@@ -120,7 +120,8 @@ public class Main {
 		//t[3].mostraInfoPokemons(t[3]);
 		//System.out.println();
 		
-
+		
+		//PASSA O TREINADOR 1 E 2 E SEUS POKEMONS PARA INICIAR A BATALHA
 		arena.iniciarBatalha(t[0], Geodude, t[1],Goldeen);
 		
 		}
