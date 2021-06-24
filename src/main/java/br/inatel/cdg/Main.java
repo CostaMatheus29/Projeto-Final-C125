@@ -61,6 +61,8 @@ public class Main {
 		t [3] = new Treinador("Erika","Ginasio de Celadon", 2);
 		
 		//posteriormente trocar esse Array por List
+		
+		
 			
 		
 /**********************************************************************************************************************************************
@@ -87,47 +89,39 @@ public class Main {
 		
 		
 		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
-		PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
-		
+		//PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
 		t[0].addPokemon(Geodude);
-		t[0].addPokemon(Onix);
-		//t[0].mostraPokemons(treinador1);
+		//t[0].addPokemon(Onix);
 		
-		//System.out.println();
-		PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
+		//PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
 		PokemonAgua Goldeen = new PokemonAgua("Goldeen", 1, 118);
-		t[1].addPokemon(Staryu);
+		//t[1].addPokemon(Staryu);
 		t[1].addPokemon(Goldeen);
-		//t[1].mostraPokemons(treinador2);
 		
-		//System.out.println();	//PULA LINHA
 		
 		t[2].addPokemon(new PokemonEletrico("Raichu", 2, 26));
 		t[2].addPokemon(new PokemonEletrico("Pikachu", 1, 25));
-		//t[2].mostraPokemons(treinador3);
 		
-		//System.out.println();
 		
 		t[3].addPokemon(new PokemonGrama("Tangela", 1, 114));
 		t[3].addPokemon(new PokemonGrama("Weepinbell", 2, 70));
-		//t[3].mostraPokemons(treinador4);
 		
-		//System.out.println();
+		
+		//Implementei na classe Arena a função screen pra printar a mensagem Pokemon grandão
+		Arena.screen();
+		
 		
 		t[0].mostraInfoPokemons(t[0]);
 		System.out.println();
 		t[1].mostraInfoPokemons(t[1]);
 		System.out.println();
-		t[2].mostraInfoPokemons(t[2]);
-		System.out.println();
-		t[3].mostraInfoPokemons(t[3]);
-		System.out.println();
+		//t[2].mostraInfoPokemons(t[2]);
+		//System.out.println();
+		//t[3].mostraInfoPokemons(t[3]);
+		//System.out.println();
 		
-		Geodude.atacar(Goldeen);
-		
-	   
-		//Implementei na classe Arena a função screen pra printar a mensagem Pokemon grandão
-		Arena.screen();
+				
+		Geodude.lutar(Geodude, Goldeen);
 		
 		
 		

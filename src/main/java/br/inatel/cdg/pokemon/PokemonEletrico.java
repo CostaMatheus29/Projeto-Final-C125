@@ -11,21 +11,7 @@ public class PokemonEletrico extends Pokemon {
 	}
 
 	
-	
-	@Override
-	public void atacar(Pokemon defende) {
-		
-		if(defende.getVida() > 0) {
-			if(this.ataque > defende.defesa) {
-			defende.setVida(Math.abs((defende.vida + defende.defesa) - this.ataque));
-			}else {
-				System.out.println("Ataque sem efeito!");
-			}
-		}else if (defende.getVida() <= 0) {
-			System.out.println("O Pokemon " + defende.nome + " está morto!");
-		}
-		
-	}
+
 
 
 
@@ -34,9 +20,14 @@ public class PokemonEletrico extends Pokemon {
 
 	}
 
+
+
 	
 	
 	
+	
+	//-----------------------------------------------------------------------------------
+	//Metodos para recalcular as caracteristicas do Pokemon, com base no seu tipo
 	
 	@Override
 	public void calculaAtaque() {
@@ -45,7 +36,7 @@ public class PokemonEletrico extends Pokemon {
 
 	@Override
 	public void calculaDefesa() {
-		this.defesa += this.nivel * 10;
+		this.defesa += this.nivel * 4;
 	}
 	
 	@Override
@@ -53,12 +44,6 @@ public class PokemonEletrico extends Pokemon {
 		this.vida += (this.nivel - 1) * 10;
 	}
 
-
-
-	@Override
-	public void tomarDano(Pokemon defende) {
-		// TODO Auto-generated method stub
-		
-	}
+	//-----------------------------------------------------------------------------------
 
 }

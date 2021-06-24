@@ -4,7 +4,7 @@ public class Arena {
 	
 	//mensagem antes de inicar a luta
 	public static void screen(){ //load screen
-        System.out.println("                                  ,'\\\n" +
+        System.out.println("Batalha                            ,'\\\n" +
                 "    _.----.        ____         ,'  _\\   ___    ___     ____\n" +
                 "_,-'       `.     |    |  /`.   \\,-'    |   \\  /   |   |    \\  |`.\n" +
                 "\\      __    \\    '-.  | /   `.  ___    |    \\/    |   '-.   \\ |  |\n" +
@@ -18,6 +18,8 @@ public class Arena {
                 "                                `'                            '-._|");
         System.out.println();
     }
+	
+
 	
 
 }
