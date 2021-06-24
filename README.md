@@ -1,8 +1,8 @@
 # Projeto-Final-C125
 Projeto final C125-L1
 
-O Projeto será um jogo baseado em Pokemon
-Cada treinador possui 2 Pokemons
+O Projeto será um jogo baseado em Pokemon \n
+Cada treinador possui 2 Pokemons \n
 Cada Pokemon é de um tipo e definido e possui caracteristicas especificas
 Os Pokemons irão lutar entre si em um Ginasio sorteado entre os dois treinadores
 Se o Pokemon ganhar ele evolui - trocando de nome e aumentando seu nivel
