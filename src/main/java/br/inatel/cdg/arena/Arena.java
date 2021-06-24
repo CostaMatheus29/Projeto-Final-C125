@@ -35,7 +35,7 @@ public class Arena {
 		
 		if(ginasio == 1)
 			System.out.println("Iniciando batalha no " + t1.getArena());
-		else if (ginasio == 2)
+		else 
 			System.out.println("Iniciando batalha no " + t2.getArena());
 		
 		
@@ -79,6 +79,14 @@ public class Arena {
 					System.out.println("Ataque do " + defendendo.getNome() + " sem efeito! Defesa maior que o dano de ataque");
 				}
 
+				
+				if (defendendo.getVida() < 0)
+					defendendo.setVida(0);
+				else if (atacando.getVida() < 0)
+					atacando.setVida(0);
+				
+				
+				
 				System.out.println("Vida dos Pokemons após o " + num_rounds + "° round");
 				System.out.println(atacando.getNome() + " hp: " + atacando.getVida());
 				System.out.println(defendendo.getNome() + " hp: " + defendendo.getVida());

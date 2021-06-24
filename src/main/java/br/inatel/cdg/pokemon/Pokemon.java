@@ -73,8 +73,15 @@ public abstract class Pokemon implements Habilidades, Atributos {
 		return vida;
 	}
 
+	
+	//Setters
+	
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	public void setVida(int vida) {
+		this.vida = vida;
 	}
 
 }
