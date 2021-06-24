@@ -12,9 +12,6 @@ public class PokemonPedra extends Pokemon {
 		
 	}
 	
-	
-
-
 
 
 

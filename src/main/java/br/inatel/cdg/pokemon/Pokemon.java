@@ -28,43 +28,7 @@ public abstract class Pokemon implements Habilidades, Atributos {
 
 	}
 
-	@Override
-	public void lutar(Pokemon atacando, Pokemon defendendo) {
 
-
-		while (atacando.getVida() > 0 && defendendo.getVida() > 0) {
-
-		
-		if (defendendo.getVida() > 0) {
-				if (atacando.getAtaque() > defendendo.getDefesa()) {
-					tomarDano(defendendo,Math.abs((defendendo.getDefesa()) - atacando.getAtaque()));
-					System.out.println(defendendo.getNome() + " tomou " + (atacando.getAtaque() - defendendo.getDefesa()) + " de dano");
-				} else {
-					System.out.println("Ataque sem efeito!");
-				}
-			} else if (defendendo.getVida() <= 0) {
-				System.out.println("O Pokemon " + defendendo.getNome() + " está morto!");
-			}
-
-			// QUEM ATACOU PRIMEIRO, AGORA TOMA DANO
-
-			if (atacando.getVida() > 0) {
-				if (defendendo.getAtaque() > atacando.getDefesa()) {
-					tomarDano(atacando, Math.abs(( atacando.getDefesa()) - defendendo.getAtaque()));
-					System.out.println(atacando.getNome() + " tomou " + (defendendo.getAtaque() - atacando.getDefesa()) + " de dano");
-				} else {
-					System.out.println("Ataque sem efeito!");
-				}
-			} else if (atacando.getVida() <= 0) {
-				System.out.println("O Pokemon " + atacando.getNome() + " está morto!");
-			}
-
-			System.out.println(atacando.getNome() + " hp: " + atacando.getVida());
-			System.out.println(defendendo.getNome() + " hp: " + defendendo.getVida());
-			
-		}
-
-	}
 
 	
 
@@ -109,10 +73,8 @@ public abstract class Pokemon implements Habilidades, Atributos {
 		return vida;
 	}
 
-	//Setters
-	
-	public void setVida(int vida) {
-		this.vida = vida;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 }

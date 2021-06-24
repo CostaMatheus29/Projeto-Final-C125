@@ -16,7 +16,7 @@ public class Treinador  {
 		this.arena = cidade;
 		this.qtdPokemon = qtdPokemon;
 		this.pokemons = new Pokemon [qtdPokemon];
-
+		
 	}
 	
 	

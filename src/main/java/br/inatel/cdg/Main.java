@@ -62,7 +62,7 @@ public class Main {
 		
 		//posteriormente trocar esse Array por List
 		
-		
+		Arena arena = new Arena();
 			
 		
 /**********************************************************************************************************************************************
@@ -120,10 +120,8 @@ public class Main {
 		//t[3].mostraInfoPokemons(t[3]);
 		//System.out.println();
 		
-				
-		Geodude.lutar(Geodude, Goldeen);
-		
-		
+
+		arena.iniciarBatalha(t[0], Geodude, t[1],Goldeen);
 		
 		}
 	
