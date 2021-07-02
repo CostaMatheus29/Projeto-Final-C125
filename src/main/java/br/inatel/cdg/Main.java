@@ -90,30 +90,44 @@ public class Main {
 
 ***********************************************************************************************************************************************/
 		
+		//CRIANDO OS POKEMONS
 		
 		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
 		PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
+		
+		PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
+		PokemonAgua Goldeen = new PokemonAgua("Goldeen", 1, 118);
+		
+		PokemonEletrico Raichu = new PokemonEletrico("Raichu", 2, 26);
+		PokemonEletrico Pikachu = new PokemonEletrico("Pikachu", 1, 25);
+
+		PokemonGrama Tangela = new PokemonGrama("Tangela", 1, 114);
+		PokemonGrama Weepinbell = new PokemonGrama("Weepinbell", 2, 70);
+		
+		
+		//ADICIONANDO CADA POKEMON AOS SEUS RESPECTIVOS TREINADORES
+		
 		t[0].addPokemon(Geodude);
 		t[0].addPokemon(Onix);
 		
-		//PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
-		PokemonAgua Goldeen = new PokemonAgua("Goldeen", 1, 118);
-		//t[1].addPokemon(Staryu);
+		t[1].addPokemon(Staryu);
 		t[1].addPokemon(Goldeen);
 		
+		t[2].addPokemon(Raichu);
+		t[2].addPokemon(Pikachu);
 		
-		t[2].addPokemon(new PokemonEletrico("Raichu", 2, 26));
-		t[2].addPokemon(new PokemonEletrico("Pikachu", 1, 25));
-		
-		
-		t[3].addPokemon(new PokemonGrama("Tangela", 1, 114));
-		t[3].addPokemon(new PokemonGrama("Weepinbell", 2, 70));
+		t[3].addPokemon(Tangela);
+		t[3].addPokemon(Weepinbell);
 		
 		
-		//Implementei na classe Arena a função screen pra printar a mensagem Pokemon grandão
+		
+		
+		//PRINTA A MENSAGEM DE BATALHA POKEMON
 		Arena.screen();
 		
 		
+		
+		// MOSTRA INFO DE TODOS OS POKEMONS DO TREINADOR DESEJADO
 		t[0].mostraInfoPokemons(t[0]);
 		System.out.println();
 		t[1].mostraInfoPokemons(t[1]);
@@ -126,8 +140,8 @@ public class Main {
 		
 		//PASSA O TREINADOR 1 E 2 E SEUS POKEMONS PARA INICIAR A BATALHA
 		arena.iniciarBatalha(t[0], Geodude, t[1],Goldeen);
-		
-		
+		arena.iniciarBatalha(t[1], Staryu, t[2],Pikachu);
+		arena.iniciarBatalha(t[2], Raichu, t[3],Tangela );
 	
 	
 	

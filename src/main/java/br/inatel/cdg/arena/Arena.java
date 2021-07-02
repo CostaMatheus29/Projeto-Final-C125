@@ -156,8 +156,8 @@ public class Arena {
 				
 				System.out.println("O Pokemon " + defendendo.getNome() + " perdeu a batalha!");
 				System.out.println("O Pokemon " + atacando.getNome() + " evoluiu");
-				atacando.setNome("Graveler"); 	//atacando.evoluir
-				System.out.println("Pokemon: " + atacando.getNome() + " apos evolucao");
+				//atacando.setNome("Graveler"); 	//atacando.evoluir
+				//System.out.println("Pokemon: " + atacando.getNome() + " apos evolucao");
 			
 			} 
 			
@@ -179,11 +179,14 @@ public class Arena {
 				//PRINTA NO
 				System.out.println("O Pokemon " + atacando.getNome() + " perdeu a batalha!");
 				System.out.println("O Pokemon " + defendendo.getNome() + " evoluiu");
-				defendendo.setNome("Seaking");	//defendendo.evoluir
-				System.out.println("Pokemon: " + defendendo.getNome() + " apos evolucao");
+				//defendendo.setNome("Seaking");	//defendendo.evoluir
+				//System.out.println("Pokemon: " + defendendo.getNome() + " apos evolucao");
 			}
 
-		
+	
+			System.out.println(""); //PULA LINHA
 
 	}
+	
+	
 }
