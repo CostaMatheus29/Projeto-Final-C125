@@ -20,7 +20,17 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        
+        
+        <dependency>
+			<groupId>org.kie.commons</groupId>
+			<artifactId>kie-nio2-model</artifactId>
+			<version>6.0.0.Alpha9</version>
+		</dependency>
+
     </dependencies>
+    
+    
 
     <build>
         <plugins>
