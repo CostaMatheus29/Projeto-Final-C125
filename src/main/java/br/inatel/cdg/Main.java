@@ -49,6 +49,9 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
+		
+		//Path arquivo = Paths.get("duelos.txt");
+		
 				
 		//Array de treinadores de tamanho 4 
 		Treinador t [] = new Treinador [4];
@@ -124,7 +127,23 @@ public class Main {
 		//PASSA O TREINADOR 1 E 2 E SEUS POKEMONS PARA INICIAR A BATALHA
 		arena.iniciarBatalha(t[0], Geodude, t[1],Goldeen);
 		
-		}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
 	
 	}
 			
