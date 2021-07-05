@@ -141,7 +141,9 @@ public class Arena {
 			
 		}
 
-			if (defendendo.getVida() <= 0) {
+		num_rounds = 1;		//voltando o num rounds para o inicio	
+		
+		if (defendendo.getVida() <= 0) {
 				
 				String teste = "O Pokemon " + defendendo.getNome() + " perdeu a batalha!";
 				
