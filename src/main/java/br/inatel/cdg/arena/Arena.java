@@ -97,6 +97,14 @@ public class Arena {
 
 			if (atacando.getAtaque() < defendendo.getDefesa() && defendendo.getAtaque() < atacando.getDefesa()) {
 				System.out.println("As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque");
+				
+				try {
+					Files.writeString(arquivo, "As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque \n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+					Files.writeString(arquivo, " " + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);		//PULA LINHA
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				
 				break;
 			}
 
@@ -145,47 +153,54 @@ public class Arena {
 		
 		if (defendendo.getVida() <= 0) {
 				
-				String teste = "O Pokemon " + defendendo.getNome() + " perdeu a batalha!";
+				String temp1 = "O Pokemon " + defendendo.getNome() + " perdeu a batalha!";
+				String evo1 = "O Pokemon " + atacando.getNome() + " evolui para ";
 				
+				System.out.println("O Pokemon " + defendendo.getNome() + " perdeu a batalha!");
+				System.out.println("O Pokemon " + atacando.getNome() + " evoluiu");
+				atacando.evoluir(atacando);
+				System.out.println("Pokemon: " + atacando.getNome() + " apos evolucao");
+				
+				String evo2 = atacando.getNome();
+				
+				
+				//ESCREVE NO ARQUIVO
 				try {
-					Files.writeString(arquivo, teste + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+					Files.writeString(arquivo, temp1 + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+					Files.writeString(arquivo, evo1 + evo2 + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 					Files.writeString(arquivo, " " + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);		//PULA LINHA
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-				
-				
-				
-				System.out.println("O Pokemon " + defendendo.getNome() + " perdeu a batalha!");
-				System.out.println("O Pokemon " + atacando.getNome() + " evoluiu");
-				//atacando.setNome("Graveler"); 	//atacando.evoluir
-				//System.out.println("Pokemon: " + atacando.getNome() + " apos evolucao");
 			
 			} 
 			
 			
 			else if (atacando.getVida() <= 0) {
 				
-				String teste = "O Pokemon " + atacando.getNome() + " perdeu a batalha!";
+				String temp = "O Pokemon " + atacando.getNome() + " perdeu a batalha!";
+				String evo1 = "O Pokemon " + defendendo.getNome() + " evolui para ";
 				
+
+				//PRINTA NO
+				System.out.println("O Pokemon " + atacando.getNome() + " perdeu a batalha!");
+				System.out.println("O Pokemon " + defendendo.getNome() + " evoluiu");
+				defendendo.evoluir(defendendo);
+				System.out.println("Pokemon: " + defendendo.getNome() + " apos evolucao");
+				
+				String evo2 = defendendo.getNome();
 				
 				//ESCREVE NO ARQUIVO
 				try {
-					Files.writeString(arquivo, teste + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+					Files.writeString(arquivo, temp + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+					Files.writeString(arquivo, evo1 + evo2 + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 					Files.writeString(arquivo, " " + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);		//PULA LINHA
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-				
-				
-				//PRINTA NO
-				System.out.println("O Pokemon " + atacando.getNome() + " perdeu a batalha!");
-				System.out.println("O Pokemon " + defendendo.getNome() + " evoluiu");
-				//defendendo.setNome("Seaking");	//defendendo.evoluir
-				//System.out.println("Pokemon: " + defendendo.getNome() + " apos evolucao");
+			
 			}
 
-	
 			System.out.println(""); //PULA LINHA
 
 	}

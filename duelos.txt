@@ -1,15 +1,18 @@
-Iniciando batalha no Ginasio de Pewter
+Iniciando batalha no Ginasio de Cerulean
 Brock x Misty
 Geodude x Goldeen
-O Pokemon Geodude perdeu a batalha!
+O Pokemon Goldeen perdeu a batalha!
+O Pokemon Geodude evolui para Graveler
  
 Iniciando batalha no Ginasio de Cerulean
 Misty x Tenente Surge
 Staryu x Pikachu
-O Pokemon Staryu perdeu a batalha!
+O Pokemon Pikachu perdeu a batalha!
+O Pokemon Staryu evolui para Starmie
  
-Iniciando batalha no Ginasio de Vermilion
+Iniciando batalha no Ginasio de Celadon
 Tenente Surge x Erika
-Raichu x Tangela
-O Pokemon Tangela perdeu a batalha!
+Electabuzz x Tangela
+O Pokemon Electabuzz perdeu a batalha!
+O Pokemon Tangela evolui para Tangrowth
  

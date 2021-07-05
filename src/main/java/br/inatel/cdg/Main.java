@@ -83,6 +83,7 @@ public class Main {
 		Onix (95) - Steelix (208)
 		Staryu (120) - Starmie (121)
 		Goldeen (118) - Seaking (119)
+		Elekid (239) - Electabuzz (125) - Electivire (466)
 		Pichu (172) - Pikachu (25) - Raichu (26)
 		Tangela (114) - Tangrowth (465)
 		Bellsprout (69) - Weepinbell (70) - Victreebel (71)
@@ -98,7 +99,7 @@ public class Main {
 		PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
 		PokemonAgua Goldeen = new PokemonAgua("Goldeen", 1, 118);
 		
-		PokemonEletrico Raichu = new PokemonEletrico("Raichu", 2, 26);
+		PokemonEletrico Electabuzz = new PokemonEletrico("Electabuzz", 2, 125);
 		PokemonEletrico Pikachu = new PokemonEletrico("Pikachu", 1, 25);
 
 		PokemonGrama Tangela = new PokemonGrama("Tangela", 1, 114);
@@ -113,7 +114,7 @@ public class Main {
 		t[1].addPokemon(Staryu);
 		t[1].addPokemon(Goldeen);
 		
-		t[2].addPokemon(Raichu);
+		t[2].addPokemon(Electabuzz);
 		t[2].addPokemon(Pikachu);
 		
 		t[3].addPokemon(Tangela);
@@ -141,7 +142,7 @@ public class Main {
 		//PASSA O TREINADOR 1 E 2 E SEUS POKEMONS PARA INICIAR A BATALHA
 		arena.iniciarBatalha(t[0], Geodude, t[1],Goldeen);
 		arena.iniciarBatalha(t[1], Staryu, t[2],Pikachu);
-		arena.iniciarBatalha(t[2], Raichu, t[3],Tangela );
+		arena.iniciarBatalha(t[2], Electabuzz, t[3],Tangela );
 	
 	
 	

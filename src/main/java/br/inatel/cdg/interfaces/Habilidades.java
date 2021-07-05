@@ -14,7 +14,7 @@ public interface Habilidades {
 	
 	public void restauraVida ();
 
-	
+	public void evoluir (Pokemon poke);
 		
 	
 	
