@@ -16,3 +16,37 @@ Electabuzz x Tangela
 O Pokemon Electabuzz perdeu a batalha!
 O Pokemon Tangela evolui para Tangrowth
  
+Iniciando batalha no Ginasio de Cerulean
+Brock x Misty
+Geodude x Goldeen
+O Pokemon Goldeen perdeu a batalha!
+O Pokemon Geodude evolui para Graveler
+ 
+Iniciando batalha no Ginasio de Vermilion
+Misty x Tenente Surge
+Staryu x Pikachu
+As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
+ 
+Iniciando batalha no Ginasio de Vermilion
+Tenente Surge x Erika
+Electabuzz x Tangela
+As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
+ 
+Iniciando batalha no Ginasio de Pewter
+Brock x Misty
+Geodude x Goldeen
+O Pokemon Geodude perdeu a batalha!
+O Pokemon Goldeen evolui para Seaking
+ 
+Iniciando batalha no Ginasio de Vermilion
+Misty x Tenente Surge
+Staryu x Pikachu
+O Pokemon Pikachu perdeu a batalha!
+O Pokemon Staryu evolui para Starmie
+ 
+Iniciando batalha no Ginasio de Vermilion
+Tenente Surge x Erika
+Electabuzz x Tangela
+O Pokemon Tangela perdeu a batalha!
+O Pokemon Electabuzz evolui para Electivire
+ 

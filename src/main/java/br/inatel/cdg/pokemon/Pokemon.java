@@ -1,7 +1,6 @@
 package br.inatel.cdg.pokemon;
 
 import java.util.Random;
-
 import br.inatel.cdg.interfaces.Atributos;
 import br.inatel.cdg.interfaces.Habilidades;
 
@@ -28,7 +27,7 @@ public abstract class Pokemon implements Habilidades, Atributos {
 
 	}
 	
-
+	
 	
 
 	//FUNÇÃO RESPONSAVEL EM EVOLUIR O POKEMON QUANDO GANHAR A LUTA
@@ -88,7 +87,6 @@ public abstract class Pokemon implements Habilidades, Atributos {
 				
 		}
 	}
-	
 	
 	
 	

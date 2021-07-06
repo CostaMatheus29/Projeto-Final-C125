@@ -1,6 +1,8 @@
 package br.inatel.cdg.arena;
 
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -8,8 +10,12 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Random;
 
+import org.junit.Test;
+
 import br.inatel.cdg.pokemon.Pokemon;
 import br.inatel.cdg.treinador.Treinador;
+
+
 
 public class Arena {
 	
@@ -151,11 +157,17 @@ public class Arena {
 
 		num_rounds = 1;		//voltando o num rounds para o inicio	
 		
+		
+		
 		if (defendendo.getVida() <= 0) {
 				
 				String temp1 = "O Pokemon " + defendendo.getNome() + " perdeu a batalha!";
 				String evo1 = "O Pokemon " + atacando.getNome() + " evolui para ";
 				
+				
+				testePokeDerrotado(defendendo);
+				
+				//PRINTA NO CONSOLE
 				System.out.println("O Pokemon " + defendendo.getNome() + " perdeu a batalha!");
 				System.out.println("O Pokemon " + atacando.getNome() + " evoluiu");
 				atacando.evoluir(atacando);
@@ -181,8 +193,9 @@ public class Arena {
 				String temp = "O Pokemon " + atacando.getNome() + " perdeu a batalha!";
 				String evo1 = "O Pokemon " + defendendo.getNome() + " evolui para ";
 				
-
-				//PRINTA NO
+				testePokeDerrotado(atacando);
+				
+				//PRINTA NO CONSOLE
 				System.out.println("O Pokemon " + atacando.getNome() + " perdeu a batalha!");
 				System.out.println("O Pokemon " + defendendo.getNome() + " evoluiu");
 				defendendo.evoluir(defendendo);
@@ -203,6 +216,13 @@ public class Arena {
 
 			System.out.println(""); //PULA LINHA
 
+	}
+	
+	
+	@Test
+	public void testePokeDerrotado(Pokemon poke){
+		int vida = poke.getVida();
+		assertEquals(0, vida);
 	}
 	
 	
