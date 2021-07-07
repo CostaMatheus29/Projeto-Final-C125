@@ -36,18 +36,31 @@ package br.inatel.cdg;
 
 
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import br.inatel.cdg.arena.Arena;
 import br.inatel.cdg.pokemon.PokemonAgua;
 import br.inatel.cdg.pokemon.PokemonEletrico;
 import br.inatel.cdg.pokemon.PokemonGrama;
 import br.inatel.cdg.pokemon.PokemonPedra;
 import br.inatel.cdg.treinador.Treinador;
+import br.inatel.cdg.util.POKEUtils;
 
 public class Main {
 	
 	
 	
 	public static void main(String[] args) {
+		
+		
+		Path arquivotxt = Paths.get("POKE.txt");
+		
+		
+		
 		
 		
 		//Path arquivo = Paths.get("duelos.txt");
@@ -93,7 +106,7 @@ public class Main {
 		
 		//CRIANDO OS POKEMONS
 		
-		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
+/*		PokemonPedra Geodude = new PokemonPedra("Geodude", 1, 74);
 		PokemonPedra Onix = new PokemonPedra("Onix", 1, 95);
 		
 		PokemonAgua Staryu = new PokemonAgua("Staryu", 1, 120);
@@ -104,11 +117,53 @@ public class Main {
 
 		PokemonGrama Tangela = new PokemonGrama("Tangela", 1, 114);
 		PokemonGrama Weepinbell = new PokemonGrama("Weepinbell", 2, 70);
-		
+*/		
 		
 		//ADICIONANDO CADA POKEMON AOS SEUS RESPECTIVOS TREINADORES
 		
-		t[0].addPokemon(Geodude);
+		List<PokemonAgua> pokemonsAgua = POKEUtils.leAguaTXT(arquivotxt);
+		List<PokemonEletrico> pokemonsEletrico = POKEUtils.leEletricoTXT(arquivotxt);
+		List<PokemonGrama> pokemonsGrama = POKEUtils.leGramaTXT(arquivotxt);
+		List<PokemonPedra> pokemonsPedra = POKEUtils.lePedraTXT(arquivotxt);
+
+		for(PokemonAgua poke:pokemonsAgua) {
+			if (poke.getId_pokedex() == 118) {
+				t[1].addPokemon(poke);
+			}
+			else if (poke.getId_pokedex() == 120) {
+				t[1].addPokemon(poke);
+			}
+		}
+		
+		for(PokemonEletrico poke:pokemonsEletrico) {
+			if (poke.getId_pokedex() == 125) {
+				t[2].addPokemon(poke);
+			}
+			else if (poke.getId_pokedex() == 25) {
+				t[2].addPokemon(poke);
+			}
+		}
+		
+		for(PokemonGrama poke:pokemonsGrama) {
+			if (poke.getId_pokedex() == 70) {
+				t[3].addPokemon(poke);
+			}
+			else if (poke.getId_pokedex() == 114) {
+				t[3].addPokemon(poke);
+			}
+		}
+		
+		for(PokemonPedra poke:pokemonsPedra) {
+			if (poke.getId_pokedex() == 74) {
+				t[0].addPokemon(poke);
+			}
+			else if (poke.getId_pokedex() == 95) {
+				t[0].addPokemon(poke);
+			}
+		}
+		
+
+/*		t[0].addPokemon();
 		t[0].addPokemon(Onix);
 		
 		t[1].addPokemon(Staryu);
@@ -119,7 +174,7 @@ public class Main {
 		
 		t[3].addPokemon(Tangela);
 		t[3].addPokemon(Weepinbell);
-		
+*/		
 		
 		
 		
@@ -133,17 +188,16 @@ public class Main {
 		System.out.println();
 		t[1].mostraInfoPokemons(t[1]);
 		System.out.println();
-		//t[2].mostraInfoPokemons(t[2]);
-		//System.out.println();
-		//t[3].mostraInfoPokemons(t[3]);
-		//System.out.println();
+		t[2].mostraInfoPokemons(t[2]);
+		System.out.println();
+		t[3].mostraInfoPokemons(t[3]);
+		System.out.println();
 		
 		
 		//PASSA O TREINADOR 1 E 2 E SEUS POKEMONS PARA INICIAR A BATALHA
-		arena.iniciarBatalha(t[0], Geodude, t[1],Goldeen);
-		arena.iniciarBatalha(t[1], Staryu, t[2],Pikachu);
-		arena.iniciarBatalha(t[2], Electabuzz, t[3],Tangela );
-	
+		arena.iniciarBatalha(t[0], t[0].getPokemons(0), t[1], t[1].getPokemons(0));
+		arena.iniciarBatalha(t[1], t[1].getPokemons(1), t[2], t[2].getPokemons(0));
+		arena.iniciarBatalha(t[2], t[2].getPokemons(1), t[3], t[3].getPokemons(0) );
 	
 	
 	

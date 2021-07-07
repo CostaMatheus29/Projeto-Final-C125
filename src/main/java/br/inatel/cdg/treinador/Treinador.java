@@ -77,6 +77,10 @@ public class Treinador  {
 	 public String getNome() {
 		return nome;
 	}
+	 
+	public Pokemon getPokemons(int i) {
+		return pokemons[i];
+	}
 
 
 
