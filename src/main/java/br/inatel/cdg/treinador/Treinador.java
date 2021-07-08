@@ -35,35 +35,24 @@ public class Treinador  {
 	}
 	
 
-	//MOSTRA AS CARACTERISTICAS DE CADA POKEMON
-	public void mostraInfoPokemons (Treinador treinador_x) {
-			for (Pokemon pokes : treinador_x.pokemons) {
-				
-				try {
-				
-					System.out.println("Pokemon: " + pokes.getNome());		
-					System.out.println("Vida: " + pokes.getVida() + " Ataque: " + pokes.getAtaque() + " Defesa: " + pokes.getDefesa());			
-			
-				} catch (NullPointerException e) {
-				System.out.println("Nao existe Pokemon nessa posicao");
-			}
-	}
-	}
+
 	
 	
-	//MOSTRA OS TREINADORES E SEUS RESPECTIVOS POKEMONS
+	//MOSTRA O TREINADOR E SEUS RESPECTIVOS POKEMONS
 	public void mostraPokemons (Treinador treinador_x) {
 		System.out.println("Pokemons do treinador: " + treinador_x.getNome());
 			
 		for (Pokemon pokes : treinador_x.pokemons) {
 			
 			try {
-				System.out.println("Nome: " + pokes.getNome() + " - ID Pokedex: " + pokes.getId_pokedex());
+				System.out.println("Pokemon: " + pokes.getNome() + " - ID Pokedex: " + pokes.getId_pokedex());
+				System.out.println("Vida: " + pokes.getVida() + " Ataque: " + pokes.getAtaque() + " Defesa: " + pokes.getDefesa());
 				
 			} catch (NullPointerException e) {
 				System.out.println("Nao existe Pokemon nessa posicao");
 			}
 	}
+		System.out.println("");	// PULA LINHA
 	}
 	
 	

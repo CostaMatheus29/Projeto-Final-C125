@@ -1,119 +1,42 @@
-Iniciando batalha no Ginasio de Cerulean
+Iniciando batalha no Ginasio de Pewter
 Brock x Misty
-Geodude x Goldeen
-O Pokemon Goldeen perdeu a batalha!
-O Pokemon Geodude evolui para Graveler
+Geodude x Staryu
+O Pokemon Geodude perdeu a batalha!
+O Pokemon Staryu evolui para Starmie
  
 Iniciando batalha no Ginasio de Cerulean
 Misty x Tenente Surge
-Staryu x Pikachu
-O Pokemon Pikachu perdeu a batalha!
+Goldeen x Electabuzz
+As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
+ 
+Iniciando batalha no Ginasio de Vermilion
+Tenente Surge x Erika
+Pikachu x Tangela
+O Pokemon Tangela perdeu a batalha!
+O Pokemon Pikachu evolui para Raichu
+ 
+Iniciando batalha no Ginasio de Cerulean
+Brock x Misty
+Geodude x Staryu
+O Pokemon Geodude perdeu a batalha!
 O Pokemon Staryu evolui para Starmie
+ 
+Iniciando batalha no Ginasio de Vermilion
+Misty x Tenente Surge
+Goldeen x Electabuzz
+O Pokemon Electabuzz perdeu a batalha!
+O Pokemon Goldeen evolui para Seaking
  
 Iniciando batalha no Ginasio de Celadon
 Tenente Surge x Erika
-Electabuzz x Tangela
-O Pokemon Electabuzz perdeu a batalha!
+Pikachu x Tangela
+O Pokemon Pikachu perdeu a batalha!
 O Pokemon Tangela evolui para Tangrowth
  
 Iniciando batalha no Ginasio de Cerulean
 Brock x Misty
-Geodude x Goldeen
-O Pokemon Goldeen perdeu a batalha!
-O Pokemon Geodude evolui para Graveler
- 
-Iniciando batalha no Ginasio de Vermilion
-Misty x Tenente Surge
-Staryu x Pikachu
+Geodude x Staryu
 As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
- 
-Iniciando batalha no Ginasio de Vermilion
-Tenente Surge x Erika
-Electabuzz x Tangela
-As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
- 
-Iniciando batalha no Ginasio de Pewter
-Brock x Misty
-Geodude x Goldeen
-O Pokemon Geodude perdeu a batalha!
-O Pokemon Goldeen evolui para Seaking
- 
-Iniciando batalha no Ginasio de Vermilion
-Misty x Tenente Surge
-Staryu x Pikachu
-O Pokemon Pikachu perdeu a batalha!
-O Pokemon Staryu evolui para Starmie
- 
-Iniciando batalha no Ginasio de Vermilion
-Tenente Surge x Erika
-Electabuzz x Tangela
-O Pokemon Tangela perdeu a batalha!
-O Pokemon Electabuzz evolui para Electivire
- 
-Iniciando batalha no Ginasio de Pewter
-Brock x Misty
-Geodude x Goldeen
-O Pokemon Goldeen perdeu a batalha!
-O Pokemon Geodude evolui para Graveler
- 
-Iniciando batalha no Ginasio de Cerulean
-Misty x Tenente Surge
-Staryu x Pikachu
-O Pokemon Staryu perdeu a batalha!
-O Pokemon Pikachu evolui para Raichu
- 
-Iniciando batalha no Ginasio de Celadon
-Tenente Surge x Erika
-Electabuzz x Tangela
-O Pokemon Tangela perdeu a batalha!
-O Pokemon Electabuzz evolui para Electivire
- 
-Iniciando batalha no Ginasio de Pewter
-Brock x Misty
-Geodude x Staryu
-O Pokemon Staryu perdeu a batalha!
-O Pokemon Geodude evolui para Graveler
- 
-Iniciando batalha no Ginasio de Pewter
-Brock x Misty
-Geodude x Staryu
-O Pokemon Staryu perdeu a batalha!
-O Pokemon Geodude evolui para Graveler
- 
-Iniciando batalha no Ginasio de Vermilion
-Misty x Tenente Surge
-Goldeen x Electabuzz
-O Pokemon Goldeen perdeu a batalha!
-O Pokemon Electabuzz evolui para Electivire
- 
-Iniciando batalha no Ginasio de Vermilion
-Tenente Surge x Erika
-Pikachu x Tangela
-O Pokemon Tangela perdeu a batalha!
-O Pokemon Pikachu evolui para Raichu
- 
-Iniciando batalha no Ginasio de Cerulean
-Brock x Misty
-Geodude x Staryu
-O Pokemon Staryu perdeu a batalha!
-O Pokemon Geodude evolui para Graveler
- 
-Iniciando batalha no Ginasio de Cerulean
-Misty x Tenente Surge
-Goldeen x Electabuzz
-As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
- 
-Iniciando batalha no Ginasio de Vermilion
-Tenente Surge x Erika
-Pikachu x Tangela
-O Pokemon Tangela perdeu a batalha!
-O Pokemon Pikachu evolui para Raichu
- 
-Iniciando batalha no Ginasio de Cerulean
-Brock x Misty
-Geodude x Staryu
-O Pokemon Staryu perdeu a batalha!
-O Pokemon Geodude evolui para Graveler
  
 Iniciando batalha no Ginasio de Cerulean
 Misty x Tenente Surge
@@ -124,21 +47,22 @@ O Pokemon Goldeen evolui para Seaking
 Iniciando batalha no Ginasio de Celadon
 Tenente Surge x Erika
 Pikachu x Tangela
-Iniciando batalha no Ginasio de Cerulean
+As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
+ 
+Iniciando batalha no Ginasio de Pewter
 Brock x Misty
 Geodude x Staryu
-O Pokemon Geodude perdeu a batalha!
-O Pokemon Staryu evolui para Starmie
+As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
  
-Iniciando batalha no Ginasio de Cerulean
+Iniciando batalha no Ginasio de Vermilion
 Misty x Tenente Surge
 Goldeen x Electabuzz
-O Pokemon Goldeen perdeu a batalha!
-O Pokemon Electabuzz evolui para Electivire
+O Pokemon Electabuzz perdeu a batalha!
+O Pokemon Goldeen evolui para Seaking
  
 Iniciando batalha no Ginasio de Vermilion
 Tenente Surge x Erika
 Pikachu x Tangela
-O Pokemon Pikachu perdeu a batalha!
-O Pokemon Tangela evolui para Tangrowth
+O Pokemon Tangela perdeu a batalha!
+O Pokemon Pikachu evolui para Raichu
  

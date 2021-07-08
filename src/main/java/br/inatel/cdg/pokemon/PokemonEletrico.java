@@ -13,16 +13,6 @@ public class PokemonEletrico extends Pokemon {
 	
 
 
-
-
-	@Override
-	public void restauraVida() {
-
-	}
-
-
-
-	
 	
 	
 	
@@ -31,12 +21,12 @@ public class PokemonEletrico extends Pokemon {
 	
 	@Override
 	public void calculaAtaque() {
-		this.ataque += this.nivel * 10;
+		this.ataque += this.nivel * 8;
 	}
 
 	@Override
 	public void calculaDefesa() {
-		this.defesa += this.nivel * 4;
+		this.defesa += this.nivel * 2;
 	}
 	
 	@Override

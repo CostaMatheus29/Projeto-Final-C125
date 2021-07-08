@@ -11,10 +11,7 @@ public class PokemonAgua extends Pokemon {
 	}
 
 
-	@Override
-	public void restauraVida() {
 
-	}
 
 	
 	
@@ -23,7 +20,7 @@ public class PokemonAgua extends Pokemon {
 	
 	@Override
 	public void calculaAtaque() {
-		this.ataque += this.nivel * 10;
+		this.ataque += this.nivel * 6;
 	}
 
 	@Override

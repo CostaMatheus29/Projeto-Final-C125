@@ -25,7 +25,7 @@ public class Arena {
 	private int num_rounds = 1;
 	
 
-	// mensagem antes de inicar a luta
+	// MENSAGEM PRINTADA ANTES DE INICIAR A LUTA
 	public static void screen() {
 		System.out.println("Batalha                            ,'\\\n"
 				+ "    _.----.        ____         ,'  _\\   ___    ___     ____\n"
@@ -51,9 +51,11 @@ public class Arena {
 		
 		if(ginasio == 1) {
 			
+			//PRINTA NO CONSOLE
 			String ginasio1 = "Iniciando batalha no " + t1.getArena();
 			System.out.println(ginasio1);
 			
+			//ESCREVE NO ARQUIVO INICIO DE CADA LUTA COM O NOME DO GINASIO
 			try {
 				Files.writeString(arquivo, ginasio1 + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 			} catch (IOException e) {
@@ -64,9 +66,12 @@ public class Arena {
 		
 		else {
 			
+			//PRINTA NO CONSOLE
 			String ginasio2 = "Iniciando batalha no " + t2.getArena();
 			System.out.println(ginasio2);
 			
+			
+			//ESCREVE NO ARQUIVO INICIO DE CADA LUTA COM O NOME DO GINASIO
 			try {
 				Files.writeString(arquivo, ginasio2 + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 			} catch (IOException e) {
@@ -75,13 +80,17 @@ public class Arena {
 		}
 		
 		
+		//PRINTA NO CONSOLE OS 2 TREINADORES E SEUS POKEMONS QUE IRÃO LUTAR
 		System.out.println( t1.getNome() + " x " + t2.getNome());
 		System.out.println(atacando.getNome() + " x " + defendendo.getNome());
 
+		
+		//ARMAZENA O CONTEUDO QUE VAI SER ESCRITO NO ARQUIVO DENTRO DE STRINGS
 		String trainers = t1.getNome() + " x " + t2.getNome();
 		String pokes = atacando.getNome() + " x " + defendendo.getNome();
 		
 		
+		//ESCREVE NO ARQUIVO
 		try {
 			Files.writeString(arquivo, trainers + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 			Files.writeString(arquivo, pokes + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
@@ -90,7 +99,7 @@ public class Arena {
 		}
 		
 		
-		// Chamando o metodo privado lutar
+		//CHAMANDO O METODO PRIVADO PARA REALIZAR A LUTA
 		lutar(atacando, defendendo);
 		
 
@@ -99,11 +108,15 @@ public class Arena {
 	//REALIZA O COMBATE ENTRE OS POKEMONS 
 	private void lutar(Pokemon atacando, Pokemon defendendo) {
 
+		//ENQUANTO A VIDA DOS DOIS POKEMONS POSSUIREM VIDA ( VIDA > 0 )
 		while (atacando.getVida() > 0 && defendendo.getVida() > 0) {
 
+			
+			// SE AS DEFESAS FOREM MAIORES QUE OS PODERES DE ATAQUE
 			if (atacando.getAtaque() < defendendo.getDefesa() && defendendo.getAtaque() < atacando.getDefesa()) {
 				System.out.println("As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque");
 				
+				// ESCREVE NO ARQUIVO QUE AS DEFESAS SÃO MAIORES QUE OS PODERES DE ATAQUE
 				try {
 					Files.writeString(arquivo, "As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque \n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 					Files.writeString(arquivo, " " + "\n", StandardOpenOption.CREATE, StandardOpenOption.APPEND);		//PULA LINHA
@@ -111,11 +124,13 @@ public class Arena {
 					e.printStackTrace();
 				}
 				
+				// SAI DO WHILE UTILIZANDO O BREAK
 				break;
 			}
 
 			else {
 
+				// PRINTA EM QUAL ROUND SE ENCONTRA A BATALHA
 				System.out.println("Round " + num_rounds);
 				
 				if (atacando.getAtaque() > defendendo.getDefesa()) {
@@ -126,7 +141,7 @@ public class Arena {
 					System.out.println("Ataque do " + atacando.getNome() + " sem efeito! Defesa maior que o dano de ataque");
 				}
 
-				// QUEM ATACOU PRIMEIRO, AGORA TOMA DANO
+				// QUEM ATACOU PRIMEIRO, EM SEGUIDA É ATACADO
 
 				if (defendendo.getAtaque() > atacando.getDefesa()) {
 					atacando.tomarDano(atacando, Math.abs((atacando.getDefesa()) - defendendo.getAtaque()));
@@ -137,6 +152,7 @@ public class Arena {
 				}
 
 				
+				// SE APÓS UM DETERMINADO ROUND A VIDA DE ALGUM POKEMON SE TORNE NEGATIVA ELA É SETADA PARA ZERO
 				if (defendendo.getVida() < 0)
 					defendendo.setVida(0);
 				else if (atacando.getVida() < 0)
@@ -155,12 +171,14 @@ public class Arena {
 			
 		}
 
-		num_rounds = 1;		//voltando o num rounds para o inicio	
+		// APOS SAIR DO WHILE RETORNA O cont DO N° DE ROUNDS DE VOLTA PARA 1
+		num_rounds = 1;	
 		
 		
-		
+		//POKEMON DEFENDENDO PERDEU A BATALHA
 		if (defendendo.getVida() <= 0) {
 				
+				//SALVA O CONTEUDO QUE SERÁ ESCRITO NO ARQUIVO DENTRO DE STRINGS
 				String temp1 = "O Pokemon " + defendendo.getNome() + " perdeu a batalha!";
 				String evo1 = "O Pokemon " + atacando.getNome() + " evolui para ";
 				
@@ -173,6 +191,8 @@ public class Arena {
 				atacando.evoluir(atacando);
 				System.out.println("Pokemon: " + atacando.getNome() + " apos evolucao");
 				
+				
+				//SALVA O CONTEUDO QUE SERÁ ESCRITO NO ARQUIVO DENTRO DE STRING
 				String evo2 = atacando.getNome();
 				
 				
@@ -188,8 +208,10 @@ public class Arena {
 			} 
 			
 			
+		//POKEMON ATACANDO PERDEU A BATALHA
 			else if (atacando.getVida() <= 0) {
 				
+				//SALVA O CONTEUDO QUE SERÁ ESCRITO NO ARQUIVO DENTRO DE STRINGS
 				String temp = "O Pokemon " + atacando.getNome() + " perdeu a batalha!";
 				String evo1 = "O Pokemon " + defendendo.getNome() + " evolui para ";
 				
@@ -201,7 +223,10 @@ public class Arena {
 				defendendo.evoluir(defendendo);
 				System.out.println("Pokemon: " + defendendo.getNome() + " apos evolucao");
 				
+				
+				//SALVA O CONTEUDO QUE SERÁ ESCRITO NO ARQUIVO DENTRO DE STRING
 				String evo2 = defendendo.getNome();
+				
 				
 				//ESCREVE NO ARQUIVO
 				try {
