@@ -1,8 +1,6 @@
 package br.inatel.cdg.arena;
 
 
-//import static org.junit.Assert.assertEquals;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,7 +12,6 @@ import java.util.Random;
 
 import br.inatel.cdg.pokemon.Pokemon;
 import br.inatel.cdg.treinador.Treinador;
-
 
 
 public class Arena {
@@ -215,7 +212,6 @@ public class Arena {
 				String temp = "O Pokemon " + atacando.getNome() + " perdeu a batalha!";
 				String evo1 = "O Pokemon " + defendendo.getNome() + " evolui para ";
 				
-//				testePokeDerrotado(atacando);
 				
 				//PRINTA NO CONSOLE
 				System.out.println("O Pokemon " + atacando.getNome() + " perdeu a batalha!");
@@ -242,13 +238,5 @@ public class Arena {
 			System.out.println(""); //PULA LINHA
 
 	}
-	
-	
-	/*@Test
-	public void testePokeDerrotado(Pokemon poke){
-		int vida = poke.getVida();
-		assertEquals(0, vida);
-	}
-	*/
 	
 }

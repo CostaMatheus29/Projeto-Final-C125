@@ -66,3 +66,20 @@ Pikachu x Tangela
 O Pokemon Tangela perdeu a batalha!
 O Pokemon Pikachu evolui para Raichu
  
+Iniciando batalha no Ginasio de Cerulean
+Brock x Misty
+Geodude x Staryu
+O Pokemon Staryu perdeu a batalha!
+O Pokemon Geodude evolui para Graveler
+ 
+Iniciando batalha no Ginasio de Cerulean
+Misty x Tenente Surge
+Goldeen x Electabuzz
+O Pokemon Goldeen perdeu a batalha!
+O Pokemon Electabuzz evolui para Electivire
+ 
+Iniciando batalha no Ginasio de Vermilion
+Tenente Surge x Erika
+Pikachu x Tangela
+As Defesas de ambos os Pokemons são maiores que seus poderes de Ataque 
+ 

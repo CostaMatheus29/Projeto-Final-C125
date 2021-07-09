@@ -13,23 +13,28 @@ import br.inatel.cdg.pokemon.PokemonPedra;
 
 public class POKEUtils {
 	
+	
 	public static List<PokemonAgua> leAguaTXT(Path arquivo){
 		
+		//LISTA DO TIPO POKEMONS AGUA
 		List<PokemonAgua> pokemonsAgua = new ArrayList<>();		
 		
+		
+		//TENTA LER O ARQUIVO, CASO NÃO TENHA PRINTA ERRO!
 		try {
-			List<String> linhas = Files.readAllLines(arquivo);
-			linhas.remove(0);
+						
+			List<String> linhas = Files.readAllLines(arquivo);	 //LÊ TODAS AS LINHAS
+			linhas.remove(0);									//REMOVE A LINHA ZERO (CABEÇALHO)
 			
-			linhas.forEach((linha) ->{
+			linhas.forEach((linha) ->{							//FOR MEGAZORD
 				
-			String[] linhaSplit = linha.split(",");
+			String[] linhaSplit = linha.split(",");				//QUEBRA NAS VIRGULAS PARA SEPARAR O TEXTO
 				
-			
-				
-				if (linhaSplit[2].equals("Agua")) {
+				if (linhaSplit[2].equals("Agua")) {				//FILTRO DO TIPO DO POKEMON
 					
-					pokemonsAgua.add(new PokemonAgua(linhaSplit[1], Integer.parseInt(linhaSplit[3]), 
+					
+					//DIVIDE OS DADOS COM , E PASSA PARA O CONSTRUTOR CRIAR UM NOVO POKEMON DO TIPO AGUA
+					pokemonsAgua.add(new PokemonAgua(linhaSplit[1], Integer.parseInt(linhaSplit[3]),
 	                		Integer.parseInt(linhaSplit[0])));
 				        }
 				
@@ -38,11 +43,13 @@ public class POKEUtils {
 			System.out.println("Erro no arquivo!");;
 		}
 		
-		return pokemonsAgua;
+		return pokemonsAgua;		//RETORNA A LISTA DE POKEMONS AGUA
 	}
+	
 	
 	public static List<PokemonPedra> lePedraTXT(Path arquivo){
 		
+		//LISTA DO TIPO POKEMONS PEDRA
 		List<PokemonPedra> pokemonsPedra = new ArrayList<>();
 		
 		try {
@@ -66,6 +73,8 @@ public class POKEUtils {
 		
 		return pokemonsPedra;
 	}
+	
+	
 	
 	public static List<PokemonGrama> leGramaTXT(Path arquivo){
 		
@@ -92,6 +101,8 @@ public class POKEUtils {
 		
 		return pokemonsGrama;
 	}
+	
+	
 	
 	public static List<PokemonEletrico> leEletricoTXT(Path arquivo){
 		
