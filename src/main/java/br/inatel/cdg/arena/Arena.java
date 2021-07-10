@@ -180,7 +180,6 @@ public class Arena {
 				String evo1 = "O Pokemon " + atacando.getNome() + " evolui para ";
 				
 				
-//				testePokeDerrotado(defendendo);
 				
 				//PRINTA NO CONSOLE
 				System.out.println("O Pokemon " + defendendo.getNome() + " perdeu a batalha!");

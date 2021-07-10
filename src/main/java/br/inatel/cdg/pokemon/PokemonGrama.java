@@ -12,14 +12,6 @@ public class PokemonGrama extends Pokemon {
 
 	
 	
-
-
-
-	
-
-	
-	
-	
 	
 	//-----------------------------------------------------------------------------------
 	//Metodos para recalcular as caracteristicas do Pokemon, com base no seu tipo

@@ -133,8 +133,6 @@ public class Main {
 		
 		
 		
-	
-		
 		//PRINTA A MENSAGEM DE BATALHA POKEMON
 		Arena.screen();
 				

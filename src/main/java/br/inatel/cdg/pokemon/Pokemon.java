@@ -29,7 +29,6 @@ public abstract class Pokemon implements Habilidades, Atributos {
 	
 	
 	
-
 	//FUNÇÃO RESPONSAVEL EM EVOLUIR O POKEMON QUANDO GANHAR A LUTA
 	@Override
 	public void evoluir(Pokemon poke) {

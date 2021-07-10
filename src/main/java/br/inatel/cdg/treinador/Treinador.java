@@ -22,8 +22,6 @@ public class Treinador  {
 	
 	
 
-
-	
 	//ADICIONA POKEMONS AO TREINADOR
 	public void addPokemon (Pokemon poke) {
 		for(int i =  0; i < pokemons.length ; i++) {
@@ -35,8 +33,6 @@ public class Treinador  {
 	}
 	
 
-
-	
 	
 	//MOSTRA O TREINADOR E SEUS RESPECTIVOS POKEMONS
 	public void mostraPokemons (Treinador treinador_x) {

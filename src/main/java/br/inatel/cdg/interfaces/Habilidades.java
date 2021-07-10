@@ -11,6 +11,4 @@ public interface Habilidades {
 	public void evoluir (Pokemon poke);
 		
 	
-	
-	
 }

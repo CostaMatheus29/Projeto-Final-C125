@@ -8,5 +8,6 @@ public interface Atributos {
 	public void calculaDefesa();
 		
 	public void calculaVida();
-
+	
+	
 }
